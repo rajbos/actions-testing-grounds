@@ -7,8 +7,14 @@ ForEach ($file in Get-ChildItem) {
     Write-Host "- $($file.Name)"
 }
 
+Set-Location ~\
 
-Set-Location ~\src\
+Write-Host "Where are we? [$pwd]"
+
+ForEach ($file in Get-ChildItem) {
+    Write-Host "- $($file.Name)"
+}
+
 Write-Host "Files in \src\:"
 ForEach ($file in Get-ChildItem) {
     Write-Host "- $($file.Name)"
