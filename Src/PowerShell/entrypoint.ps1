@@ -1,3 +1,6 @@
+param (
+    [string] $variable1
+)
 function Get-LocationInfo {
     Write-Host "Where are we? [$pwd]"
 
@@ -17,7 +20,7 @@ function main {
     Set-Location $PSScriptRoot
     Get-LocationInfo
 
-    Write-Host "Listing parameters: $1"
+    Write-Host "Listing parameters: $1, $variable1"
 }
 
 # call main script:
