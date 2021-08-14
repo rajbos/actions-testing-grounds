@@ -13,4 +13,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args: 
-    - -variable1 ${{ inputs.variable1 }}
+    - -variable1 '${{ inputs.variable1 }}'
