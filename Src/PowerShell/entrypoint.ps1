@@ -1,21 +1,15 @@
-Write-Host $PSVersion
-
+Write-Host "Version info: $PSVersionTable"
 Write-Host "Hello World from scriptroot: $PSScriptRoot" 
-Write-Host "Where are we? [$pwd]"
 
-ForEach ($file in Get-ChildItem) {
-    Write-Host "- $($file.Name)"
+function Get-LocationInfo {
+    Write-Host "Where are we? [$pwd]"
+
+    ForEach ($file in Get-ChildItem) {
+        Write-Host "- $($file.Name)"
+    }
 }
+
+Get-LocationInfo
 
 Set-Location ~\
-
-Write-Host "Where are we? [$pwd]"
-
-ForEach ($file in Get-ChildItem) {
-    Write-Host "- $($file.Name)"
-}
-
-Write-Host "Files in \src\:"
-ForEach ($file in Get-ChildItem) {
-    Write-Host "- $($file.Name)"
-}
+Get-LocationInfo
