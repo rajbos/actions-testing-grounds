@@ -5,4 +5,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps: 
-      - uses: rajbos/actions-testing-grounds
+      - uses: rajbos/actions-testing-grounds@v1
