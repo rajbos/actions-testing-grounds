@@ -8,7 +8,7 @@ ForEach ($file in Get-ChildItem) {
 }
 
 
-Set-Location .\src\
+Set-Location ~\src\
 Write-Host "Files in \src\:"
 ForEach ($file in Get-ChildItem) {
     Write-Host "- $($file.Name)"
