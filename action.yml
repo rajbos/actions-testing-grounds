@@ -6,4 +6,4 @@ branding:
   color: blue
 runs:
   using: 'docker'
-  image: '/Src/PowerShell/Dockerfile'
+  image: 'Dockerfile'
