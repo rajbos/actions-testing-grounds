@@ -17,10 +17,11 @@ function main {
     Set-Location $PSScriptRoot
     Get-LocationInfo
 
-    Set-Location "does not exists"
+    Write-Host "Listing parameters: $1"
 }
 
 # call main script:
 main
 # return the container with the last exit code:
-exit $?
+Write-Host "Returning with last exit code: $LASTEXITCODE"
+exit $LASTEXITCODE
