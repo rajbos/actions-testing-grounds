@@ -8,9 +8,13 @@ inputs:
   variable1:
     description: 'Variable 1'
     required: false
-    default: 'Hello World'
+    default: 'value 1'
+  variable2:
+    description: 'Variable 2'
+    required: false
+    default: 'value 2'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args: 
-    - '${{ inputs.variable1 }}'
+    - '${{ inputs.variable1 }} ${{ inputs.variable2 }}'
