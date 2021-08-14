@@ -17,4 +17,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args: 
-    - '${{ inputs.variable1 }} ${{ inputs.variable2 }}'
+    - '${{ inputs.variable1 }}' 
+    - '${{ inputs.variable2 }}'

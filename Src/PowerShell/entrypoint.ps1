@@ -20,7 +20,7 @@ function main {
     Set-Location $PSScriptRoot
     Get-LocationInfo
 
-    Write-Host "Listing parameters: $variable1, $variable2"
+    Write-Host "Listing parameters: [$variable1], [$variable2]"
 }
 
 # call main script:
