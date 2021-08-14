@@ -1,4 +1,4 @@
-Write-Host "Version info: $PSVersionTable"
+Write-Host "Version info: $([string]$PSVersionTable["PSVersion"])"
 Write-Host "Hello World from scriptroot: $PSScriptRoot" 
 
 function Get-LocationInfo {
