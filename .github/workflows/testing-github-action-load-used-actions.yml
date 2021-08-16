@@ -11,3 +11,6 @@ jobs:
         name: Load used actions
         with: 
           PAT: ${{ secrets.GITHUB_TOKEN }}
+        id: load-actions
+      - shell: pwsh
+        run: Write-Host "Found actions [${{ steps.load-actions.outputs.actions }}]"
