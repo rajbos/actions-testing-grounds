@@ -1,6 +1,6 @@
 on: 
   push: 
-  
+
   workflow_dispatch:
     
 jobs:
@@ -9,5 +9,5 @@ jobs:
     steps: 
       - uses: rajbos/github-action-load-used-actions@main
         name: Load used actions
-        #with: 
-        #  variable1: testing1
+        with: 
+          PAT: ${{ secrets.GITHUB_TOKEN }}
