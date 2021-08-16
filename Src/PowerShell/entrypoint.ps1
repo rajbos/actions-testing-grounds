@@ -1,5 +1,6 @@
 param (
-    [string] $variable1
+    [string] $variable1,
+    [string] $variable2
 )
 function Get-LocationInfo {
     Write-Host "Where are we? [$pwd]"
