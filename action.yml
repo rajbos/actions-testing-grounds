@@ -13,9 +13,17 @@ inputs:
     description: 'Variable 2'
     required: false
     default: 'value 2'
+  variable3:
+    description: 'Variable 3'
+    required: false
+  variable4:
+    description: 'Variable 4'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args: 
     - '${{ inputs.variable1 }}' 
-    - '${{ inputs.variable2 }}'
+    - '${{ inputs.variable2 }}' 
+    - '${{ inputs.variable3 }}'
+    - '${{ inputs.variable4 }}'
