@@ -12,5 +12,7 @@ jobs:
         with: 
           PAT: ${{ secrets.GITHUB_TOKEN }}
         id: load-actions
-      - shell: pwsh
-        run: Write-Host "Found actions [${{ steps.load-actions.outputs.actions }}]"
+      - shell: pwsh        
+        run: |
+         Write-Host "Found test [${{ steps.load-actions.outputs.test }}]" 
+         Write-Host "Found actions [${{ steps.load-actions.outputs.actions }}]"
