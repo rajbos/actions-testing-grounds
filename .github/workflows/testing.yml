@@ -22,3 +22,9 @@ jobs:
           variable2: testing2
           variable3: testing3
           variable4: testing4
+  
+  get-env-variables:
+    runs-on: ubuntu-latest
+    steps:
+      - run: foreach ($item in dir env:) { write-host "$($item.Name) - $($item.Value)" }
+        shell: pwsh
