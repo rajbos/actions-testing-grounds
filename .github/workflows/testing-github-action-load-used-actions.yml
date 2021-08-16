@@ -18,7 +18,7 @@ jobs:
          $content = ${{ steps.load-actions.outputs.actions }}
          New-Item -Path 'actions.json' -Value $content -Force | Out-Null
             
-      - name: upload result file as artefact
+      - name: Upload result file as artefact
         uses: actions/upload-artifact@v2
         with: 
           name: actions
