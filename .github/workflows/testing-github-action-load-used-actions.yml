@@ -1,0 +1,11 @@
+on: 
+  workflow_dispatch:
+    
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: rajbos/github-action-load-used-actions@main
+        name: Load used actions
+        #with: 
+        #  variable1: testing1
