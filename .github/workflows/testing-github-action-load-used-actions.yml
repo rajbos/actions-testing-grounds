@@ -21,5 +21,5 @@ jobs:
       - name: upload result file as artefact
         uses: actions/upload-artifact@v2
         with: 
-          name: summarized-actions
-          path: summarized-actions.json
+          name: actions
+          path: actions.json
