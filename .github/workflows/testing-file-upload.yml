@@ -13,8 +13,6 @@ jobs:
     - name: Create file
       run: |
         echo "this is the file contents" > test.txt
-        echo "1: ${{ github.repository }}" || true        
-        echo "2: $GITHUB_REPOSITORY" || true
 
     - uses: rajbos/github-upload-action@master
       with:
