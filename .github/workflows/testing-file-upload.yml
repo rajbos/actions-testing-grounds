@@ -1,0 +1,19 @@
+on: 
+  push: 
+
+  workflow_dispatch:
+    
+jobs:
+  load-all-used-actions:
+    runs-on: ubuntu-latest
+    steps: 
+
+    - name: Create file
+      run: echo "this is the file contents" > test.txt
+
+    - uses: rajbos/github-upload-action@master
+      with:
+        access-token: ${{ secrets.GITHUB_TOKEN }}
+        file-path: test.txt
+        username: x
+        repo: ${{ env.GITHUB_REPOSITORY }}
