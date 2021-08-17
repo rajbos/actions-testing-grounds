@@ -18,4 +18,4 @@ jobs:
         access-token: ${{ secrets.GITHUB_TOKEN }}
         file-path: test.txt
         username: x
-        repo: ${{ env.GITHUB_REPOSITORY }}
+        repo: ${{ github.GITHUB_REPOSITORY }}
