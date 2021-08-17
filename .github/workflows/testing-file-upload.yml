@@ -15,7 +15,7 @@ jobs:
         echo "this is the file contents" > test.txt
         echo "1: ${{ github.GITHUB_REPOSITORY }}" || true
         echo "2: ${{ env.GITHUB_REPOSITORY }}" || true
-        echo "3: "$GITHUB_REPOSITORY" || true
+        echo "3: $GITHUB_REPOSITORY" || true
 
     - uses: rajbos/github-upload-action@master
       with:
