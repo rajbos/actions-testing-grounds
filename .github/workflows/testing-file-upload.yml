@@ -20,3 +20,4 @@ jobs:
         file-path: test.txt
         username: x
         repo: ${{ github.repository }}
+        remote-dir: test
