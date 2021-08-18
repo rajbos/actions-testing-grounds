@@ -14,10 +14,10 @@ jobs:
       run: |
         echo "this is the file contents" > test.txt
 
-    - uses: rajbos/github-upload-action@patch-api-url
+    - uses: rajbos/github-upload-action@remotePathEmpty
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
         file-path: test.txt
         username: x
         repo: ${{ github.repository }}
-        remote-dir: test
+        #remote-dir: test
