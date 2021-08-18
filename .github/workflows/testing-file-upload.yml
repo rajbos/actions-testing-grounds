@@ -14,7 +14,7 @@ jobs:
       run: |
         echo "this is the file contents" > test.txt
 
-    - uses: rajbos/github-upload-action@remotePathEmpty
+    - uses: rajbos/github-upload-action@remotePathEmtpy
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
         file-path: test.txt
