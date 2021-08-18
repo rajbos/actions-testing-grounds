@@ -14,10 +14,11 @@ jobs:
       run: |
         echo "this is the file contents" > test.txt
 
-    - uses: rajbos/github-upload-action@remotePathEmtpy
+    - uses: rajbos/github-upload-action@puhs-to-branch
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
         file-path: test.txt
         username: x
         repo: ${{ github.repository }}
         #remote-dir: test
+        branch-name: testing-file-upload
