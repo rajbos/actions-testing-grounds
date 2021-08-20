@@ -21,4 +21,4 @@ jobs:
         username: x
         repo: ${{ github.repository }}
         remote-dir: test
-        branch-name: testing-file-upload
+        branch-name: not-existing-branch
