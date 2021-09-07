@@ -14,7 +14,7 @@ jobs:
       run: |
         echo "this is the file contents" > test.txt
 
-    - uses: rajbos/github-upload-action@error-handling-fix
+    - uses: rajbos/github-upload-action@check-branch
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
         file-path: test.txt
