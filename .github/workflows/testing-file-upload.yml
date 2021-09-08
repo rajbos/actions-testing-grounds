@@ -12,7 +12,7 @@ jobs:
 
     - name: Create file
       run: |
-        echo "this is the file contents" > test.txt
+        echo "this is the file contents..." > test.txt
 
     - uses: rajbos/github-upload-action@push-to-branch
       with:
