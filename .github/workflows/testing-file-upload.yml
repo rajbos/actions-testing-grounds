@@ -18,7 +18,7 @@ jobs:
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
         file-path: test.txt
-        username: x
-        repo: ${{ github.repository }}
+        owner: rajbos
+        repo: actions-testing-grounds
         remote-dir: test
         branch-name: not-existing-branch
