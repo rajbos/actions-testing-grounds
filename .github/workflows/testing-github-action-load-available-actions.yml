@@ -11,7 +11,7 @@ jobs:
       - uses: rajbos/github-action-load-available-actions@typescript
         name: Load used actions
         with: 
-          PAT: ${{ secrets.GITHUB_TOKEN }}
+          PAT: ${{ secrets.PAT }}
         id: load-actions
         
       - shell: pwsh        
