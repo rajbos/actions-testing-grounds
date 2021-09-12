@@ -5,4 +5,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: rajbos/github-action-composite-hello-world/
+      - uses: rajbos/github-action-composite-hello-world@main
